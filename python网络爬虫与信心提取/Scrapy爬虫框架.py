@@ -26,4 +26,24 @@ Item Pipelines
     目的：对请求和爬取项的再处理
     功能：修改，丢弃，新增请求和爬取项
 
+常用命令
+
+    startproject创建一个新工程
+    scrapy startproject <name>[dir]
+
+    genspider创建一个爬虫
+    scrapy genspider [options]<name><domain>
+
+    settings获得爬虫配置信息
+    scrapy settings [options]
+
+    srawl运行一个爬虫
+    scrapy crawl <spider>
+
+    list列出工程中所有爬虫
+    scrapy list
+
+    shell启动URL调试命令行
+    scrapy shell [url]
+
 '''
