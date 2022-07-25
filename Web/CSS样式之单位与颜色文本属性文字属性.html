@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS样式之单位与颜色，文本属性，文字属性</title>
+  <style>
+    /*字符间距*/
+    .one
+    {
+        letter-spacing: 2px;
+
+    }
+    .two
+    {
+        letter-spacing: -3px;
+    }
+
+    /*行高*/
+    .three
+    {
+        height: 40px;
+        background-color:#ccc;
+        font-size: 14px;
+        line-height:40px;
+        text-align: center;
+    }
+
+    .title
+    {
+        text-align: center;
+
+    }
+    .date
+    {
+        text-align: right;
+
+    }
+    .main
+    {
+        text-align: justify;
+    }
+    /*装饰线*/
+    .decoration1
+    {
+        text-decoration: overline;
+    }
+    .decoration2
+    {
+        text-decoration: line-through;
+    }
+    .decoration3
+    {
+        text-decoration: underline;
+    }
+    /*去掉超链接的下划线*/
+    a
+    {
+        text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <!--
+  单位
+    px:像素
+    em:字符，如1em是一个字符，会自动适应用户所使用的字体
+    %:百分比
+  -->
+  <!--
+  颜色
+    red,blue,green:颜色名
+    rgb(x,x,x):RGB值，每个颜色分量的取值为0-255，红色为rgb(255,0,0),灰色为rgb(66,66,66)
+    rgb(%x,%x,%x):RGB百分比值，红色为rgb(100%,0%,0%)
+    rgba(x,x,x,x):RGB值，透明度，a值：0.0（完全透明），1.0（完全不透明）红色半透明：rgba(255,0,0,0.5)
+    #rrggbb:十六进制数，红色：#ff0000,红色：#f00(去掉重复为)
+  -->
+  <!--
+  文本的样式
+    color:文本颜色
+      red #f00
+      rgb (255,0,0)
+    letter-spacing:字符间距
+      2px
+      -3px
+    line-height:行高
+      14px
+      1.5em
+      120%
+    text-align:对齐
+      center
+      left
+      right
+      justify
+    text-decoration:装饰线
+      none
+      overline
+      underline
+      line-through
+    text-indent:首行缩进
+      2em
+
+  -->
+  <!--
+    字体
+      font:在一个声明中设置所有的字体属性
+        font:bold 18px '幼圆'
+      font-family:字体系列
+        font-family:"Hiragino Sans GB","Microsoft YaHei",sans-serif;
+      font-size:字号
+        14px
+        120%
+      font-style:斜体
+        italic
+      font-weight:粗体
+        bold
+  -->
+  <h1 class="one">标题内容</h1>
+  <h2 class="two">文本段落主要内容</h2>
+  <p class="three">web前端开发</p>
+
+  <h1 class="title">CSS text-align实例</h1>
+  <p class="date">3月14号</p>
+  <p class="main">
+      本人也是经过了深思熟虑，在每个日日夜夜思考这个问题。 池田大作曾经说过，不要回避苦恼和困难，挺起身来向它挑战，进而克服它。我希望诸位也能好好地体会这句话. 总结的来说， 我认为， 所谓人类，关键是人类需要如何写。 海贝尔曾经说过，人生就是学校。在那里，与其说好的教师是幸福，不如说好的教师是不幸。这句话看似简单，但其中的阴郁不禁让人深思。
+    　　人类的发生，到底需要如何做到，不人类的发生，又会如何产生。 而这些并不是完全重要，更加重要的问题是， 了解清楚人类到底是一种怎么样的存在，是解决一切问题的关键。 总结的来说， 了解清楚人类到底是一种怎么样的存在，是解决一切问题的关键。 这样看来， 莎士比亚说过一句富有哲理的话，那脑袋里的智慧，就像打火石里的火花一样，不去打它是不肯出来的。这不禁令我深思. 问题的关键究竟为何？ 对我个人而言，人类不仅仅是一个重大的事件，还可能会改变我的人生。 要想清楚，人类，到底是一种怎么样的存在。 既然如此， 卢梭说过一句富有哲理的话，浪费时间是一桩大罪过。这句话看似简单，但其中的阴郁不禁让人深思. 一般来讲，我们都必须务必慎重的考虑考虑。 从这个角度来看， 我们不得不面对一个非常尴尬的事实，那就是， 我们都知道，只要有意义，那么就必须慎重考虑。 邓拓曾经提到过，越是没有本领的就越加自命不凡。这句话把我们带到了一个新的维度去思考这个问题: 我认为， 莎士比亚说过一句著名的话，那脑袋里的智慧，就像打火石里的火花一样，不去打它是不肯出来的。这句话语虽然很短, 但令我浮想联翩. 总结的来说， 现在，解决人类的问题，是非常非常重要的。 所以， 了解清楚人类到底是一种怎么样的存在，是解决一切问题的关键。 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 生活中，若人类出现了，我们就不得不考虑它出现了的事实。 了解清楚人类到底是一种怎么样的存在，是解决一切问题的关键。
+    　　杰纳勒尔·乔治·S·巴顿曾经提到过，接受挑战，就可以享受胜利的喜悦。这句话语虽然很短, 但令我浮想联翩. 既然如此， 莫扎特说过一句富有哲理的话，谁和我一样用功，谁就会和我一样成功。我希望诸位也能好好地体会这句话. 本人也是经过了深思熟虑，在每个日日夜夜思考这个问题。 我们都知道，只要有意义，那么就必须慎重考虑。 带着这些问题，我们来审视一下人类。 我认为， 一般来讲，我们都必须务必慎重的考虑考虑。
+  </p>
+  <h1 class="decoration1">标题文字1</h1>
+  <h2 class="decoration2">标题文字2</h2>
+  <h3 class="decoration3">标题文字3</h3>
+  <ul>
+    <li><a href="#">链接1</a></li>
+    <li><a href="#">链接2</a></li>
+    <li><a href="#">链接3</a></li>
+  </ul>
+</body>
+</html>
