@@ -1,3 +1,4 @@
+package Java基本程序设计结构;
 import java.util.Scanner;
 
 public class while_loop

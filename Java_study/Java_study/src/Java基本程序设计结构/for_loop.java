@@ -1,5 +1,5 @@
-import java.util.Scanner;
-
+package Java基本程序设计结构;
+import java.util.*;
 public class for_loop
 {
     public static void main(String[] args)
@@ -12,6 +12,5 @@ public class for_loop
             System.out.printf("The %02d is hello world\n",i);
         }
         System.out.printf("The %02d is hello world",times_loop);
-
     }
 }
