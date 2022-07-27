@@ -3,6 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <title>文档流定位</title>
+  <style>
+    *
+    {
+        padding: 0;
+        margin: 0;
+
+    }
+    #nav
+    {
+        width: 300px;
+        margin: 100px auto;
+        font-size: 0;
+    }
+    a{
+        display: inline-block;
+        width: 80px;
+        height: 30px;
+        font-size: 14px;
+        text-align: center;
+        line-height: 30px;
+        text-decoration: none;
+        border-bottom: 1px solid #ccc;
+
+    }
+    a:hover
+    {
+      color: white;
+      background-color: #ccc;
+      border: 1px solid;
+      border-left-color: orange;
+      border-top-color: orange;
+      border-right-color: orange;
+    }
+  </style>
 </head>
 <body>
 <!--
@@ -25,8 +59,20 @@
       将元素显示为inline:
         display:inline;
     inline-block
+      不单独占用一行
+      元素的height,width,margin,padding都可设置
+      常见的inline-block元素:<img>
+      例如:
+        <img>
+      将元素显示为inline-block元素：
+        display:inline-block
   元素类型的转换
 
 -->
+  <div id="nav">
+    <a href="#">链接1</a>
+    <a href="#">链接2</a>
+    <a href="#">链接3</a>
+  </div>
 </body>
 </html>

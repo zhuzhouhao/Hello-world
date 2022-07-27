@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>浮动定位</title>
+  <style>
+    /*div*/
+    /*{*/
+    /*    width: 200px;*/
+    /*    height: 200px;*/
+    /*    border: 1px solid red;*/
+    /*    float: left;*/
+    /*}*/
+    *
+    {
+        padding: 0;
+        margin: 0;
+
+    }
+    body
+    {
+        font-size: 14px;
+    }
+    #container
+    {
+        margin: 0 auto;
+        width: 1000px;
+        height: 500px;
+        /*background-color: #6cf;*/
+
+    }
+    #header
+    {
+        height: 100px;
+        background-color: #6cf;
+        margin-bottom: 5px;
+
+    }
+    #main
+    {
+        height: 500px;
+        background-color: #cff;
+        margin-bottom: 5px;
+        
+    }
+    #footer
+    {
+        height: 60px;
+        background-color: #6cf;
+    }
+    #aside
+    {
+        float: left;
+        width: 300px;
+        height: 500px;
+        background-color: #6cf;
+        margin-right: 5px;
+    }
+    #content
+    {
+        float: left;
+        width: 695px;
+        height: 500px;
+        background-color: #cff;
+    }
+  </style>
+</head>
+<body>
+<!--
+  float属性
+    left:左浮动
+    right:右浮动
+    none:不浮动
+-->
+<!--<div id="box1">box1</div>-->
+<!--<div id="box2">box2</div>-->
+<!--
+  clear属性
+    both:清除左右两边的浮动
+    left和right分别清除左侧和右侧的浮动
+-->
+  <div id="container">
+    <div id="header">
+
+    </div>
+    <div id="main">
+      <div id="aside">
+
+      </div>
+      <div id="content">
+
+      </div>
+    </div>
+    <div id="footer">
+
+    </div>
+  </div>
+</body>
+</html>
