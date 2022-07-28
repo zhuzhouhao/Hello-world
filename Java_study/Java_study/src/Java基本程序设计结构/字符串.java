@@ -78,5 +78,14 @@ public class 字符串
             String str3 = "prkeere";
             int compare = str3.compareTo("hello");
             System.out.println(compare);
+            
+        //构建字符串,需要构建一个字符串构建器
+        StringBuilder builder = new StringBuilder();
+        String ch = "he";
+        String ch1 = "llo";
+        builder.append(ch);
+        builder.append(ch1);
+        String completedString = builder.toString();
+        System.out.println(completedString);
     }
 }
