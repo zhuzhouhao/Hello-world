@@ -1,12 +1,15 @@
 package Java基本程序设计结构;
 
 //import java.io.Console;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Path;
 import java.util.Scanner;
 
 public class 输入输出
 {
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) throws IOException {
         //读取输入
             //输入一行，考虑可能包含空格
             Scanner in = new Scanner(System.in);
@@ -35,5 +38,10 @@ public class 输入输出
             //char[] passwd = cons.readPassword("Password: ");
         //格式化输出
         System.out.printf("%s","hello");
+
+        //文件输入输出
+        Scanner in_f = new Scanner(Path.of("e:\\demo\\demo.txt"), StandardCharsets.UTF_8);
+        PrintWriter out = new PrintWriter("demo.txt", StandardCharsets.UTF_8);
+        out.println("hello");
     }
 }

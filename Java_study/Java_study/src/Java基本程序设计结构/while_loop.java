@@ -6,10 +6,26 @@ public class while_loop
     public static void main(String[] args)
     {
         Scanner in = new Scanner(System.in);
-        int i = in.nextInt();
-        for(int j = 0;j<i;j++)
+        int times = in.nextInt();
+        int count = 0;
+        date:
+        if (count == times)
         {
-            System.out.println("hello world");
+            System.exit(0);
+        }
+        else
+        {
+            while (true)
+            {
+                if (count < times)
+                {
+                    System.out.println("Hello");
+                    count++;
+                }
+                else {
+                    break date;
+                }
+            }
         }
     }
 }
