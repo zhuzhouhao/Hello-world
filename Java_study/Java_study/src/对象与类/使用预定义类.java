@@ -2,7 +2,7 @@ package 对象与类;
 
 import java.time.DayOfWeek;
 import java.time.LocalDate;
-import java.util.*;
+import java.util.Date;
 public class 使用预定义类
 {
     public static void main(String[] args)
