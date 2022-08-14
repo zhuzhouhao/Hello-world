@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>表单</title>
+  <meta charset="UTF-8">
+  <title>表单</title>
 </head>
 <body>
 <!--
@@ -11,41 +11,49 @@
 -->
 
 <form action="">
-    <!--文本框和密码框-->
-    账户：<input type="text" value="" name=""><br>
-    密码：<input type="password" value="" name=""><br>
-    <!--提交按钮-->
-    <input type="submit" value="提交">
-    <!--重置按钮-->
-    <input type="reset" value="重置"><br>
-    <!--单选框和复选框-->
-    性别：
-    男
-    <input type="radio" name="gender"checked="checked">
-    女
-    <input type="radio" name="gender"><br>
+  <!--文本框和密码框-->
+  账户：<input type="text" value="" name=""><br>
+  密码：<input type="password" value="" name=""><br>
+  <!--提交按钮-->
+  <input type="submit" value="提交">
+  <!--重置按钮-->
+  <input type="reset" value="重置"><br>
+  <!--单选框和复选框-->
+  性别：
+  男
+  <input type="radio" name="gender"checked="checked">
+  女
+  <input type="radio" name="gender"><br>
 
-    爱好：
+  爱好：
 
-    <input type="checkbox" name="hobby" checked="checked" value="1">
-    音乐&nbsp;
+  <input type="checkbox" name="hobby" checked="checked" value="1">
+  音乐&nbsp;
 
-    <input type="checkbox" name="hobby" value="2">
-    体育&nbsp;
+  <input type="checkbox" name="hobby" value="2">
+  体育&nbsp;
 
-    <input type="checkbox" name="hobby" value="3">
-    阅读&nbsp;
-    <br>
-    <hr>
-    <!--下拉列表框-->
-    <select>
-        <option selected="selected">请选择</option>
-        <option>选项1</option>
-        <option>选项2</option>
-    </select>
-    <hr>
-    <!--文本域-->
-    <textarea cols="30" rows="10">请输入内容</textarea>
+  <input type="checkbox" name="hobby" value="3">
+  阅读&nbsp;
+  <br>
+  <hr>
+  <!--下拉列表框-->
+  <select>
+    <option selected="selected">请选择</option>
+    <option>选项1</option>
+    <option>选项2</option>
+  </select>
+  <hr>
+  <!--文本域-->
+  <textarea cols="30" rows="10">请输入内容</textarea>
 </form>
+
+<!--placeholder属性-->
+<form method="get">
+  <input type="search" name="user_search" placeholder="Search W3School" />
+  <input type="submit" />
+</form>
+
+
 </body>
 </html>
