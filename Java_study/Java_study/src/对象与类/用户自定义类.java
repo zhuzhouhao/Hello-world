@@ -1,7 +1,5 @@
 package 对象与类;
 
-import java.time.LocalDate;
-
 public class 用户自定义类
 {
     public static void main(String[] args)
@@ -24,37 +22,3 @@ public class 用户自定义类
     }
 }
 
-class Employee
-{
-    private String name;
-    private double salary;
-    private LocalDate hireDay;
-
-    public Employee(String n, double s, int year, int month, int day)
-    {
-        name = n;
-        salary = s;
-        hireDay = LocalDate.of(year, month, day);
-    }
-
-    public String getName()
-    {
-        return name;
-    }
-
-    public double getSalary()
-    {
-        return salary;
-    }
-
-    public LocalDate getHireDay()
-    {
-        return hireDay;
-    }
-
-    public void raiseSalary(double byPercent)
-    {
-        double raise = salary * byPercent / 100;
-        salary += raise;
-    }
-}
