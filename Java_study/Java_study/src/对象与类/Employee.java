@@ -29,4 +29,9 @@ public class Employee {
     double raise = salary * byPercent / 100;
     salary += raise;
   }
+
+  public String toString()
+  {
+    return super.toString() + "[name = " + this.getName() + "]";
+  }
 }
