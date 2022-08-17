@@ -13,6 +13,8 @@ public class Employee {
     hireDay = LocalDate.of(year, month, day);
   }
 
+  public Employee(){}
+
   public String getName() {
     return name;
   }
@@ -32,6 +34,6 @@ public class Employee {
 
   public String toString()
   {
-    return super.toString() + "[name = " + this.getName() + "]";
+    return getClass().getName() + "[name = " + this.getName() + ",he/she was employed at " + hireDay +  ",his salary is "+ salary + "]";
   }
 }
