@@ -6,4 +6,10 @@ public class ÉùÃ÷Òì³£
   {
 
   }
+
+  public static void doSomethingWithClass(String name)
+    throws ReflectiveOperationException
+  {
+    Class cl = Class.forName(name);
+  }
 }
